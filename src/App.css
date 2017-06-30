@@ -57,6 +57,7 @@ transition: transform ease 0.1s;
   opacity: 0;
 }
 
+/*IS THIS STILL BEING USED??????*/
 .fadeCover {
   position: absolute;
   top: 0px;
@@ -67,6 +68,30 @@ transition: transform ease 0.1s;
 -moz-transition: opacity .25s ease-out;
 -webkit-transition: opacity .25s ease-out;
 opacity: 0;
+}
+
+.textfade {
+  opacity: 0;
+}
+.textfadeIn {
+  opacity: 1!important;
+}
+.textfadeInCover {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  transition: opacity .20s ease-in-out;
+-moz-transition: opacity .20s ease-in-out;
+-webkit-transition: opacity .20s ease-in-out;
+}
+
+.containerd {
+  transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
 }
 
 /* DARK EFFECTS */

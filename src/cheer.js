@@ -14,8 +14,6 @@ class Cheer extends Component {
   render() {
     return (
       <div className ="noOverflow">
-      <div className="covering"></div>
-
       <Motion style={{y: spring((this.props.open) ? 0 : 700)}}>
           {({y}) =>
             <div className="demo0">
@@ -38,7 +36,7 @@ class Cheer extends Component {
           }
        </Motion>
 
-        <Motion style={{x: spring((this.props.open) ? 0 : 700)}}>
+        <Motion style={{x: spring((this.props.open) ? 0 : 900, {stiffness: 180, damping: 40})}}>
           {({x}) =>
             <div className="demo0">
             <img src={iceberg} className="iceberg" alt="Sup" style={{

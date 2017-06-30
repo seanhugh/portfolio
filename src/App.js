@@ -12,21 +12,35 @@ class App extends Component {
     super(props);
     this.state = {
         theme: "dark",
-        open:false};
-  }
-
+        open:false,
+        fadeOut:false,
+        nextColor: "#E2E7E8",
+        color: {
+          "cheer": "#E2E7E8",
+          "dark": "#ffffff"
+        },
+        };
+  };
   onClick(theme1){
+    var self=this;
     this.setState({
-      theme: theme1,
-      open: (theme1 === "cheer") ? true : false
+      fadeOut: true,
+      nextColor: self.state.color[theme1]
     });
+    setTimeout(function(){
+       self.setState({
+         theme: theme1,
+         open: (theme1 === "cheer") ? true : false,
+         fadeOut: false,
+       });
+     }, 200);
   }
 
   render() {
     return (
       <div>
         <Opening />
-        <Header theme={this.state.theme}/>
+        <Header nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
         <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
       </div>
 

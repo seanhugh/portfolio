@@ -30,7 +30,7 @@ class ClassImages extends Component {
 
   render() {
     if (this.state.theme === "dark"){
-      return (<Dark />);
+      return (<Dark fadeOut={this.props.fadeOut}/>);
     }
     else if (this.state.theme === "cheer"){
       return (<Cheer open={this.state.open}/>);
