@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
 import { slide as Menu } from 'react-burger-menu'
 
 // LOGO
@@ -23,7 +29,7 @@ class App extends Component {
         };
   };
 
-  onClick(theme1){
+  onClick(theme1, time){
     var self=this;
     this.setState({
       fadeOut: true,
@@ -35,25 +41,29 @@ class App extends Component {
          open: (theme1 === "cheer") ? true : false,
          fadeOut: false,
        });
-     }, 200);
+     }, time);
   }
 
   render() {
+    console.log(this.state.theme);
     return (
-      <div>
-      <Menu pageWrapId={ "page-wrap" }>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-      </Menu>
-        <Header nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
-        <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
+      <Router>
+        <div>
+          <Route exact path="/" render={ ()  => <Header nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+             }/>
 
-      </div>
+          <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
+
+          <Menu pageWrapId={ "page-wrap" } isOpen={ false }>
+            <Link to="/" onClick={this.onClick.bind(this, this.state.theme, 50)}>Home</Link>
+            <Link to="/work">My Work</Link>
+            <Link to="/contact">Contact</Link>
+          </Menu>
+        </div>
+      </Router>
 
     );
   }
 }
 
-export default App;
+export default App
