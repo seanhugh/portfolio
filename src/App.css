@@ -57,22 +57,6 @@ transition: transform ease 0.1s;
   opacity: 0;
 }
 
-/*IS THIS STILL BEING USED??????*/
-.fadeCover {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  transition: opacity .25s ease-out;
--moz-transition: opacity .25s ease-out;
--webkit-transition: opacity .25s ease-out;
-opacity: 0;
-}
-
-.textfade {
-  opacity: 0;
-}
 .textfadeIn {
   opacity: 1!important;
 }
@@ -89,16 +73,16 @@ opacity: 0;
 }
 
 .containerd {
-  transition: opacity .25s ease-in-out;
--moz-transition: opacity .25s ease-in-out;
--webkit-transition: opacity .25s ease-in-out;
+    margin-top: 250px;
+  transition: opacity .20s ease-out;
+-moz-transition: opacity .20s ease-out;
+-webkit-transition: opacity .20s ease-out;
 }
 
 /* DARK EFFECTS */
 .dark .containerd {
   position: absolute;
   left: 50%;
-  margin-top: 300px;
   font-family: 'Roboto', sans-serif;
 }
 .dark .containerdHelp {
@@ -154,7 +138,6 @@ opacity: 0;
   z-index: 500;
   position: absolute;
   left: 50%;
-  margin-top: 200px;
   font-family: 'Indie Flower', cursive;
 }
 .cheer .containerdHelp {
@@ -180,10 +163,9 @@ opacity: 0;
 }
 
 .cheer em{
-  /*background-color: #FFD2A6;*/
-  /*padding: 2px 7px 2px 5px;*/
   font-style: normal;
   line-height: 30px;
+  font-weight: 600;
 }
 
 /*Cheer Images*/
@@ -235,69 +217,51 @@ left: 200px;
   left: 1000px;
 }
 
-
-
-/*Lets Hids my Loading Page with CSS B)*/
-
-.bigWhite{
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  z-index: 500;
-  top: 0;
-  position: absolute;
+/*MENU STUFF*/
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
 }
 
-.signup-response{
-
-     animation:signup-response 0.5s 1;
-    -webkit-animation:signup-response 0.5s 1;
-    animation-fill-mode: forwards;
-
-    animation-delay:2.5s;
-    -webkit-animation-delay:2.5s; /* Safari and Chrome */
-    -webkit-animation-fill-mode: forwards;
-
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
 }
 
-@keyframes signup-response{
-    from {opacity :1;}
-    to {opacity :0;}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
 }
 
-@-webkit-keyframes signup-response{
-    from {opacity :1;}
-    to {opacity :0;}
-}
-/*PART 2*/
-
-.hideMe {
-    -moz-animation: cssAnimation 0s ease-in 3s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 3s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 3s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-@keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
 }
 
-.loading-logo {
-  margin-top: 200px;
-  height: 200px;
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
