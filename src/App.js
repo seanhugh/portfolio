@@ -3,10 +3,9 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-import { slide as Menu } from 'react-burger-menu'
-
+import MyMenuButton from './MyMenuButton';
 // LOGO
 import penguin2 from './penguinGIF.gif';
 
@@ -45,20 +44,13 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.theme);
     return (
       <Router>
         <div>
           <Route exact path="/" render={ ()  => <Header nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
              }/>
-
           <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
-
-          <Menu pageWrapId={ "page-wrap" } isOpen={ false }>
-            <Link to="/" onClick={this.onClick.bind(this, this.state.theme, 50)}>Home</Link>
-            <Link to="/work">My Work</Link>
-            <Link to="/contact">Contact</Link>
-          </Menu>
+          <MyMenuButton clickFun={this.onClick.bind(this, this.state.theme, 50)}/>
         </div>
       </Router>
 
