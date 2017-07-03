@@ -47,7 +47,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" render={ ()  => <Header nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+          <Route exact path="/" render={ ()  => <Header page="home" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+             }/>
+          <Route exact path="/work" render={ ()  => <Header page="work" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
              }/>
           <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
           <MyMenuButton clickFun={this.onClick.bind(this, this.state.theme, 50)}/>

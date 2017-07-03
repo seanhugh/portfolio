@@ -214,3 +214,63 @@ left: 200px;
   top: 200px;
   left: 1000px;
 }
+
+/* WORK */
+.workCon{
+  padding-top: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.workCon h2 sm{
+    font-size: 20px;
+    color: #6D6E71;
+    font-weight: 400;
+}
+
+.workCon h2{
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+
+.workCon h4 {
+  font-weight: 300;
+}
+
+.githubHolder h4 {
+  font-weight: 400;
+}
+
+.darkBar {
+    height: 2px;
+    width: 560px;
+    background: #E6E7E8;
+}
+.darkBarCover {
+    height: 2px;
+    background: black;
+}
+
+.skillSection {
+    padding-bottom: 38px;
+}
+.allMahGits{
+  margin-top: -10px;
+}
+.githubHolder {
+    margin: 20px 0px;
+    padding: 8px 10px 5px 10px;
+    outline: black solid .1px;
+    margin-right: 20px;
+    height: 80px;
+}
+.viewMore{
+  padding-top: 10px;
+}
+
+.githubHolder h4{
+  padding-left: 10px;
+}
+.githubHolder p{
+  padding-left: 10px;
+      color: #939598;
+}
