@@ -257,8 +257,9 @@ left: 200px;
   margin-top: -10px;
 }
 .githubHolder {
+    overflow: hidden;
     margin: 20px 0px;
-    padding: 8px 10px 5px 10px;
+    padding: 8px 30px 5px 10px;
     outline: black solid .1px;
     margin-right: 20px;
     height: 80px;
@@ -269,8 +270,52 @@ left: 200px;
 
 .githubHolder h4{
   padding-left: 10px;
+  margin-top: 0px;
 }
 .githubHolder p{
   padding-left: 10px;
       color: #939598;
+  float: right;
+}
+
+.githubHolder img{
+    height: 50px;
+    left: -76px;
+    position: absolute;
+}
+.githubHolder .row{
+    margin-top: 10px;
+}
+
+.githubHolder h5 {
+    margin-top: 4px;
+    margin-bottom: 7px;
+    font-weight: 400;
+    color: #808285;
+}
+
+.row2 .col-md-12{
+    padding-left: 10px;
+}
+
+.viewMore a{
+  color: black;
+text-decoration: none;
+}
+
+.viewMore a:hover{
+  color: #414141;
+text-decoration: none;
+}
+
+.githubHolder:hover {
+    cursor: pointer;
+}
+.gitBlock{
+  height: 80px;
+width: 80px;
+background: #414141;
+position: absolute;
+top: -18px;
+left: -91px;
 }
