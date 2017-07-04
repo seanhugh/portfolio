@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // Pages
 import Dark from './dark'
 import Cheer from './cheer'
+import CheerHome from './cheerHome'
 import FadeTo from './FadeTo'
 
 class ClassImages extends Component {
@@ -30,10 +31,18 @@ class ClassImages extends Component {
 
   render() {
     if (this.state.theme === "dark"){
-      return (<Dark fadeOut={this.props.fadeOut}/>);
+      return (<Dark />);
     }
     else if (this.state.theme === "cheer"){
-      return (<Cheer open={this.state.open}/>);
+
+      if (this.props.page === "home"){
+        return (<CheerHome open={this.state.open}/>);
+
+      } else if (this.props.page === "work"){
+        return (<Cheer open={this.state.open}/>);
+
+      }
+
     }
   }
 }

@@ -28,7 +28,7 @@ body{
 	width: 3.8em;
 	height: 0.1em;
 	margin: 0.9em;
-	border-right: 2.8em solid #212121;
+	border-right: 2.8em solid #BA0F40;
 	border-left: 0.6em solid #d6d6d6;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -40,6 +40,13 @@ body{
 	-moz-transition-duration: 600ms;
 	transition-duration: 600ms;
 }
+
+.cheer .toggle-icon .bar {
+	height: 0.4em;
+    margin: 0.9em;
+    border-right: 2.8em solid #AF5D35;
+}
+
 	.toggle-icon .bar:nth-of-type(1) {
 		-webkit-transition: opacity 300ms;
 		-moz-transition: opacity 300ms;
@@ -120,6 +127,15 @@ list-style-type: none;
 #navBack a:hover {
     opacity: 1;
     text-decoration: none;
+}
+
+.cheer .pushed .bar:nth-of-type(2) {
+    border-right: 2.8em solid white;
+    border-left: 0.6em solid #d6d6d6;
+    margin-left: 1.8em;
+    -webkit-transform: rotate(-137deg) translateY(-1.5em);
+    -ms-transform: rotate(-137deg) translateY(-1.5em);
+    transform: rotate(-137deg) translateY(-1.8em);
 }
 
 /*.pushed .toggle-icon:hover .bar:nth-of-type(2) {

@@ -22,7 +22,7 @@ class App extends Component {
         fadeOut:false,
         nextColor: "#E2E7E8",
         color: {
-          "cheer": "#E2E7E8",
+          "cheer": "#EEFFFF",
           "dark": "#ffffff"
         },
         };
@@ -49,10 +49,12 @@ class App extends Component {
         <div>
           <Route exact path="/" render={ ()  => <Header page="home" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
              }/>
-          <Route exact path="/work" render={ ()  => <Header page="work" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+          <Route exact path="/coding" render={ ()  => <Header page="work" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+             }/>
+          <Route exact path="/projects" render={ ()  => <Header page="projects" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
              }/>
           <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
-          <MyMenuButton clickFun={this.onClick.bind(this, this.state.theme, 50)}/>
+          <MyMenuButton theme={this.state.theme} clickFun={this.onClick.bind(this, this.state.theme, 50)}/>
         </div>
       </Router>
 

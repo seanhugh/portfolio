@@ -45,7 +45,7 @@ class WorkText extends Component {
               <h5 className="viewMore text-center"><a href="https://github.com/seanhugh">View More</a></h5>
             </div>
           </div>
-        </div>
+            </div>
       </div>
     </div>
     );

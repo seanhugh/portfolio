@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Motion, spring} from 'react-motion';
 import HomeText from './HomeText';
 import WorkText from './WorkText';
+import ProjectsText from './ProjectsText';
 
 class HeadingText extends Component {
   constructor(props) {
@@ -21,6 +22,8 @@ class HeadingText extends Component {
       var page2render = <HomeText theme={this.props.theme}/>
     } else if (this.props.page === "work"){
       var page2render = <WorkText theme={this.props.theme}/>
+    } else if (this.props.page === "projects"){
+      var page2render = <ProjectsText theme={this.props.theme}/>
     };
     return (
       <Motion style={{x: spring((this.state.mounted) ? 1 : 0, {stiffness: 110, damping: 40})}}>

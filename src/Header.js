@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <div className={this.props.theme}>
           <div className="covering"></div>
-          <ClassImages fadeOut={this.props.fadeOut} theme={this.props.theme} />
+          <ClassImages fadeOut={this.props.fadeOut} page={this.props.page} theme={this.props.theme} />
           <div style={{backgroundColor: fadeInColor}} className={coverFadeIn}></div>
           <HeadingText theme={this.props.theme} page={this.props.page} fadeOut = {this.props.fadeOut}/>
       </div>

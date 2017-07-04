@@ -24,7 +24,7 @@ class MyMenuButton extends Component {
     console.log(this.state.open);
     const burgClass = (this.state.open) ? "pushed" : "";
     return (
-      <div>
+      <div className={this.props.theme}>
       <Motion style={{y: spring((this.state.open) ? 0 : -300)}}>
           {({y}) =>
             <div id="navBack" style={{
@@ -33,8 +33,8 @@ class MyMenuButton extends Component {
             }}>
               <div className = "menuContainer">
               <li><Link to="/" onClick={this.setClass.bind(this)}>Home</Link></li>
-             <li><Link to="/work" onClick={this.setClass.bind(this)}>My Work</Link></li>
-             <li><Link to="/contact" onClick={this.setClass.bind(this)}>Contact me</Link></li>
+             <li><Link to="/coding" onClick={this.setClass.bind(this)}>Coding</Link></li>
+             <li><Link to="/projects" onClick={this.setClass.bind(this)}>My Projects</Link></li>
               </div>
             </div>
           }
