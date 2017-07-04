@@ -1,0 +1,40 @@
+.cheerHome .water2 {
+    bottom: 0px;
+}
+.cheerHome .water1 {
+    bottom: 5px;
+}
+.cheerHome .cliff {
+    bottom: 5px;
+    position: absolute;
+    width: 400px;
+}
+.cheerHome .plane {
+    position: absolute;
+    bottom: 3px;
+    height: 190px;
+}
+.cheerHome .boat {
+    position: absolute;
+    height: 160px;
+    bottom: 5px;
+}
+img.wall {
+    height: 98px;
+    bottom: 3px;
+    position: absolute;
+}
+img.layer2 {
+    position: absolute;
+    height: 50px;
+    bottom: 16px;
+    left: -15px;
+}
+img.back1 {
+    position: absolute;
+    bottom: 0px;
+}
+img.back2 {
+    position: absolute;
+    bottom: 0px;
+}
