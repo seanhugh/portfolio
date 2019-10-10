@@ -51,8 +51,6 @@ class App extends Component {
              }/>
           <Route exact path="/coding" render={ ()  => <Header page="work" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
              }/>
-          <Route exact path="/projects" render={ ()  => <Header page="projects" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
-             }/>
           <ButtonT theme={this.state.theme} onClick={this.onClick.bind(this)}/>
           <MyMenuButton theme={this.state.theme} clickFun={this.onClick.bind(this, this.state.theme, 50)}/>
         </div>
@@ -63,3 +61,6 @@ class App extends Component {
 }
 
 export default App
+
+//          <Route exact path="/projects" render={ ()  => <Header page="projects" nextColor={this.state.nextColor} fadeOut={this.state.fadeOut} theme={this.state.theme}/>
+//             }/>

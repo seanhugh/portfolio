@@ -38,10 +38,10 @@ class WorkText extends Component {
           <div className="col col-md-5">
             <h2>GitHub <sm>@seanhugh</sm></h2>
             <div className = "allMahGits">
-              <GithubEl title={"Portfolio Website"} sub={"React JS, HTML, CSS"} link ={"https://github.com/seanhugh"} description="A website made from scratch using react JS"/>
-              <GithubEl title={"Portfolio Website"} sub={"React JS, HTML, CSS"} link ={"https://github.com/seanhugh"} description="A website made from scratch using react JS"/>
-              <GithubEl title={"Portfolio Website"} sub={"React JS, HTML, CSS"} link ={"https://github.com/seanhugh"} description="A website made from scratch using react JS"/>
-              <GithubEl title={"Portfolio Website"} sub={"React JS, HTML, CSS"} link ={"https://github.com/seanhugh"} description="A website made from scratch using react JS"/>
+              <GithubEl title={"invitemo"} sub={"React, JavaScript, CSS"} link ={"https://github.com/seanhugh/invitemo"} description="A user focused events tool"/>
+              <GithubEl title={"HCI Research"} sub={"Flask, Python, Numpy"} link ={"https://github.com/seanhugh/Mixed_Initiative_Research"} description="Web app that runs a mixed-initiative algebraic calculator."/>
+              <GithubEl title={"Data & Islamaphobia"} sub={"R, Tidyverse"} link ={"https://github.com/seanhugh/Data-Islamophobia"} description="Analysis of War and Terrorism's impact on Islamaphobia"/>
+              <GithubEl title={"Crowd Surf"} sub={"Flask, Python, HTML"} link ={"https://github.com/seanhugh/Crowd-Surf"} description="The best way to buy and sell tickets. A Flask based website."/>
               <h5 className="viewMore text-center"><a href="https://github.com/seanhugh">View More</a></h5>
             </div>
           </div>

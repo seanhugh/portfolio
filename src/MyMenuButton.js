@@ -34,7 +34,6 @@ class MyMenuButton extends Component {
               <div className = "menuContainer">
               <li><Link to="/" onClick={this.setClass.bind(this)}>Home</Link></li>
              <li><Link to="/coding" onClick={this.setClass.bind(this)}>Coding</Link></li>
-             <li><Link to="/projects" onClick={this.setClass.bind(this)}>My Projects</Link></li>
               </div>
             </div>
           }
